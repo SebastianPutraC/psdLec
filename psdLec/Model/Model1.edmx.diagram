@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2c50dba8ce584d04856db168c7f32b15" Name="Diagram1">
+        <EntityTypeShape EntityType="MydatabaseModel.Customer" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MydatabaseModel.Product" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MydatabaseModel.Seller" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MydatabaseModel.Shipper" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MydatabaseModel.Transaction" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="MydatabaseModel.FK_Transaction_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="MydatabaseModel.FK_Product_Seller" ManuallyRouted="false" />
+        <AssociationConnector Association="MydatabaseModel.FK_Transaction_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="MydatabaseModel.FK_Transaction_Shipper" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
